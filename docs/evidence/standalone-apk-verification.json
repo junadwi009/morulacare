@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-11-01T14:52:33.123860+00:00",
+  "artifact": "C:\\Users\\User.LAPTOP-OROCJQ8C.000\\Downloads\\Project\\morulacare\\artifacts\\android\\MorulaCare-local-api-x86_64.apk",
+  "checks": [
+    "Published APK bytes match build SHA256",
+    "JavaScript is embedded as Hermes bytecode",
+    "Embedded bundle selects local API demo",
+    "Native libraries target the x86_64 emulator",
+    "Launcher and splash resources are packaged",
+    "Own package and release debuggable flag are correct",
+    "No background, overlay or legacy storage permission",
+    "APK includes explicit loopback network security policy",
+    "APK signature verifies with the staged local test certificate"
+  ],
+  "error": null,
+  "architectures": [
+    "x86_64"
+  ],
+  "embeddedBundleBytes": 1639864,
+  "signerCertificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
+  "passed": 9
+}

@@ -1,0 +1,84 @@
+{
+  "passed": 6,
+  "planned": {
+    "dataMode": "DEMO",
+    "evaluatedAt": "2026-10-31T09:15:00+07:00",
+    "deliveryEnabled": false,
+    "jobs": [
+      {
+        "id": "demo-job-3bc6e811-4854-366d-85ec-e2b91c7a46ef",
+        "appointmentId": "apt-next",
+        "dueAt": "2026-11-01T10:00:00+07:00",
+        "channel": "IN_APP_DEMO",
+        "title": "Pengingat kunjungan",
+        "body": "Ada jadwal perawatan yang perlu Anda tinjau.",
+        "status": "planned",
+        "reason": "Aturan contoh 24 jam sebelum kunjungan; bukan interval klinis atau jadwal pengiriman aktif."
+      },
+      {
+        "id": "demo-job-569b13fd-f054-36a4-aa76-ca2829451a5d",
+        "appointmentId": "apt-next",
+        "dueAt": "2026-11-02T08:00:00+07:00",
+        "channel": "IN_APP_DEMO",
+        "title": "Pengingat kunjungan",
+        "body": "Ada jadwal perawatan yang perlu Anda tinjau.",
+        "status": "planned",
+        "reason": "Aturan contoh 2 jam sebelum kunjungan; bukan interval klinis atau jadwal pengiriman aktif."
+      }
+    ]
+  },
+  "due": {
+    "dataMode": "DEMO",
+    "evaluatedAt": "2026-11-01T10:00:00+07:00",
+    "deliveryEnabled": false,
+    "jobs": [
+      {
+        "id": "demo-job-3bc6e811-4854-366d-85ec-e2b91c7a46ef",
+        "appointmentId": "apt-next",
+        "dueAt": "2026-11-01T10:00:00+07:00",
+        "channel": "IN_APP_DEMO",
+        "title": "Pengingat kunjungan",
+        "body": "Ada jadwal perawatan yang perlu Anda tinjau.",
+        "status": "due",
+        "reason": "Aturan contoh 24 jam sebelum kunjungan telah jatuh tempo; pengiriman tetap nonaktif."
+      },
+      {
+        "id": "demo-job-569b13fd-f054-36a4-aa76-ca2829451a5d",
+        "appointmentId": "apt-next",
+        "dueAt": "2026-11-02T08:00:00+07:00",
+        "channel": "IN_APP_DEMO",
+        "title": "Pengingat kunjungan",
+        "body": "Ada jadwal perawatan yang perlu Anda tinjau.",
+        "status": "planned",
+        "reason": "Aturan contoh 2 jam sebelum kunjungan; bukan interval klinis atau jadwal pengiriman aktif."
+      }
+    ]
+  },
+  "expired": {
+    "dataMode": "DEMO",
+    "evaluatedAt": "2026-11-02T10:00:00+07:00",
+    "deliveryEnabled": false,
+    "jobs": [
+      {
+        "id": "demo-job-3bc6e811-4854-366d-85ec-e2b91c7a46ef",
+        "appointmentId": "apt-next",
+        "dueAt": "2026-11-01T10:00:00+07:00",
+        "channel": "IN_APP_DEMO",
+        "title": "Pengingat kunjungan",
+        "body": "Ada jadwal perawatan yang perlu Anda tinjau.",
+        "status": "expired",
+        "reason": "Waktu janji telah dimulai atau lewat; pengingat simulasi tidak dikirim."
+      },
+      {
+        "id": "demo-job-569b13fd-f054-36a4-aa76-ca2829451a5d",
+        "appointmentId": "apt-next",
+        "dueAt": "2026-11-02T08:00:00+07:00",
+        "channel": "IN_APP_DEMO",
+        "title": "Pengingat kunjungan",
+        "body": "Ada jadwal perawatan yang perlu Anda tinjau.",
+        "status": "expired",
+        "reason": "Waktu janji telah dimulai atau lewat; pengingat simulasi tidak dikirim."
+      }
+    ]
+  }
+}

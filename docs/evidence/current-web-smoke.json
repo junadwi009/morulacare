@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-11-01T14:49:29.172102+00:00",
+  "checks": [
+    "API mode overview and five navigation tabs",
+    "Section actions have at least 44px touch targets",
+    "Reminder acknowledgement updates and restores through API",
+    "Released embryo list and detail provenance",
+    "Care history filter and detail instructions",
+    "Appointment history, simulated change receipt and immutable official schedule",
+    "API assistant schedule reply and clinical handoff",
+    "API preference update and partner-access boundary",
+    "Notification inbox renders demo messages",
+    "Synchronization retry has at least a 44px touch target",
+    "Failed refresh retains warning after successful mutation",
+    "Successful refresh clears synchronization warning",
+    "First-load API error is visible without fixture fallback",
+    "Empty released embryo results show waiting state without negative clinical claim",
+    "No uncaught browser page errors"
+  ],
+  "passed": 15,
+  "pageErrors": [],
+  "browser": "Microsoft Edge headless",
+  "browserVersion": "156.0.4314.58",
+  "viewport": "390x844",
+  "mode": "API demo",
+  "scope": "React Native Web; not native Android/iOS"
+}

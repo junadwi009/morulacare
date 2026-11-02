@@ -1,0 +1,13 @@
+flowchart TD
+    Mobile["React Native: Android dan iOS"] --> API["Java API dan otorisasi pasien"]
+    API --> ReadModel["Data yang boleh dibaca pasien"]
+    API --> Requests["Permintaan dan bantuan"]
+    Sources["Adapter TERA dan laboratorium"] --> Review{"Identitas dan rilis valid?"}
+    Review -->|Ya| ReadModel
+    Review -->|Belum| Staff["Antrean petugas"]
+    Staff --> Review
+    Requests --> Staff
+    ReadModel --> Outbox["Event dan aturan notifikasi"]
+    Outbox --> Check{"Versi, izin, dan waktu valid?"}
+    Check -->|Ya| Delivery["Kanal notifikasi yang disetujui"]
+    Check -->|Tidak| Cancel["Batalkan atau tahan"]

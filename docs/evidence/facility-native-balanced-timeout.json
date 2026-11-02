@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-11-01T10:56:12.258383+00:00",
+  "scope": "Native Expo Go58.0.5 / Android35 Google APIs revision9 / API demo; emulator GPS injection, not physical GPS",
+  "syntheticPosition": {
+    "latitude": -6.195055,
+    "longitude": 106.8338607
+  },
+  "checks": [
+    "Google AVD renders redesigned API home without automatic permission prompt"
+  ],
+  "passed": 1,
+  "error": "Native provider did not return a current position:                          KONSEP        Snapshot demo \u00b7 31 Okt 2026 API DEMO     Temukan cabang dekat Anda Aktifkan lokasi atau cari kota secara manual.   Cari kota atau cabang Morula   Gunakan lokasi saya Lokasi hanya digunakan saat Anda memilihnya, tidak disimpan atau dikirim ke server Morula Care.   Lokasi belum diperoleh. Coba lagi di area terbuka atau cari cabang secara manual. Halo, Nadia (demo). Ruang tenang untuk perjalanan Anda.  N  Perjalanan IVF Anda Menunggu konsultasi rencana berikutnya  Pembaruan telah dirilis      Lihat perjalanan saya    Lihat janji    Beranda   Perjalanan   Janji   Asisten   Profil "
+}

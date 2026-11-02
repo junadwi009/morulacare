@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-11-01T14:24:47.197209+00:00",
+  "checks": [
+    "Visual Home loads generated hero and four portraits with hidden API diagnostics",
+    "Doctor search, gender/branch preferences and empty-state reset work",
+    "Favorite doctor and directory selection survive peer-tab navigation",
+    "Home doctor card opens that profile and selected date/time reaches booking review",
+    "Lost POST response retries the same key and creates exactly one persisted booking",
+    "Booking survives browser reload and remains separate from official clinical appointments",
+    "Explicit cancellation updates API and releases the selected doctor slot",
+    "A delayed confirmed retry cannot revive a booking canceled through another tab",
+    "A real occupied-slot409 refreshes availability without false confirmation",
+    "Doctor profile/date/time layout fits small, wide and landscape viewports",
+    "Branch utility keeps GPS accuracy and detection diagnostics out of product UI",
+    "No uncaught page errors in visual booking journeys"
+  ],
+  "error": null,
+  "scope": "Fictional doctor booking UI against real local API/Postgres; generated demo photos; not hospital scheduling",
+  "passed": 12,
+  "pageErrors": [],
+  "createdBookingIds": [
+    "booking-1b3fad52-5305-4571-9a6a-a7e774853a12",
+    "booking-c368ed1e-7242-453e-8632-49c5e55be618",
+    "booking-5cd7d752-18ce-4097-949a-7ea2c0ae24e1"
+  ],
+  "cleanupErrors": []
+}

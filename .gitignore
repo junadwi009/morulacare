@@ -1,0 +1,35 @@
+node_modules/
+target/
+dist/
+dist-api/
+dist-ios-test/
+tools/asset-cache/
+.expo/
+.env
+.env.local
+*.log
+*.apk
+*.aab
+*.ipa
+.DS_Store
+
+# Local configuration, credentials, and signing material
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+local.properties
+
+# Generated builds, tooling caches, and local source backups
+/artifacts/
+/runtime/
+/preview/
+/tools/*-before/
+__pycache__/
+*.py[cod]
+.gradle/
+.idea/

@@ -1,0 +1,122 @@
+{
+  "source": "morula-flower.svg",
+  "sourceSha256": "8848b57fbef988fad0b5643f6a1b926c061fbb03275bfa31e3a8f9608ddc467f",
+  "renderer": "@resvg/resvg-js",
+  "rendererVersion": "2.6.2",
+  "adaptiveSafeZone": "576px artwork width on 1024px canvas; inside central Android safe area",
+  "assets": [
+    {
+      "name": "app-icon.png",
+      "size": 1024,
+      "artWidth": 700,
+      "background": "#FFFFFF",
+      "width": 1024,
+      "height": 1024,
+      "alphaPixels": 0,
+      "artworkBounds": [
+        162,
+        189,
+        861,
+        834
+      ],
+      "sha256": "5077e4e77d69f9050f29b91242621dcdf90c7d663787270b91908553c7833fa7"
+    },
+    {
+      "name": "adaptive-icon.png",
+      "size": 1024,
+      "artWidth": 576,
+      "background": null,
+      "width": 1024,
+      "height": 1024,
+      "alphaPixels": 867314,
+      "artworkBounds": [
+        224,
+        246,
+        799,
+        777
+      ],
+      "sha256": "3e7995bea87551d22e8eb9fb76608879445fabbbe324fde6949eab0a06065d77"
+    },
+    {
+      "name": "adaptive-monochrome.png",
+      "size": 1024,
+      "artWidth": 576,
+      "background": null,
+      "monochrome": true,
+      "width": 1024,
+      "height": 1024,
+      "alphaPixels": 867314,
+      "artworkBounds": [
+        224,
+        246,
+        799,
+        777
+      ],
+      "sha256": "1d2ac1e2f3f4f24aa7b8fa80ad8cad9275f5833d204e81d7550ac43a7cb36e1f"
+    },
+    {
+      "name": "favicon.png",
+      "size": 64,
+      "artWidth": 58,
+      "background": null,
+      "width": 64,
+      "height": 64,
+      "alphaPixels": 2500,
+      "artworkBounds": [
+        3,
+        5,
+        60,
+        58
+      ],
+      "sha256": "35a5243dc746d379b0a6ed05d06002fa3a45c621d0fd8e117db0197945e57c78"
+    },
+    {
+      "name": "web-icon-192.png",
+      "size": 192,
+      "artWidth": 172,
+      "background": null,
+      "width": 192,
+      "height": 192,
+      "alphaPixels": 21265,
+      "artworkBounds": [
+        10,
+        16,
+        181,
+        175
+      ],
+      "sha256": "664bed2295f73593715a841351cda42f0302d537e4802dd222651222d8679d65"
+    },
+    {
+      "name": "web-icon-512.png",
+      "size": 512,
+      "artWidth": 460,
+      "background": null,
+      "width": 512,
+      "height": 512,
+      "alphaPixels": 147021,
+      "artworkBounds": [
+        26,
+        43,
+        485,
+        468
+      ],
+      "sha256": "71dea571b76abf33a7db9b2d8b21e5ef75a6f14db30bff69ecca78e8841a612d"
+    },
+    {
+      "name": "splash-mark.png",
+      "size": 1024,
+      "artWidth": 900,
+      "background": null,
+      "width": 1024,
+      "height": 1024,
+      "alphaPixels": 603546,
+      "artworkBounds": [
+        62,
+        97,
+        961,
+        926
+      ],
+      "sha256": "468c0cab4cc7724ad0f8f16d93800b8859a979428b4d85423ca3bd6040de7aa9"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-11-01T14:27:56.736702+00:00",
+  "checks": [
+    "Native standalone visual Home renders generated doctor assets",
+    "Native gender preference and favorite doctor selection work",
+    "Native doctor/date/time and editable reason reach review after drag dismisses keyboard",
+    "Native booking creates exactly one real demo reservation and keeps official appointments intact",
+    "Booking persists after native cold launch and reload from API",
+    "Native explicit cancellation reaches API and releases the reserved slot"
+  ],
+  "error": null,
+  "scope": "Standalone Android35 Google APIs; fictional doctor booking against local API/Postgres; no Expo Go/Metro",
+  "passed": 6,
+  "createdBookingIds": [
+    "booking-fb00d8fb-8720-4885-93dc-bae550ea33c8"
+  ],
+  "cleanupErrors": [],
+  "stylusHandwritingSettingRestored": "null"
+}

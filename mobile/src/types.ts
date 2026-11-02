@@ -1,0 +1,21 @@
+export type Tab = 'home' | 'journey' | 'appointments' | 'doctors' | 'assistant' | 'profile';
+export type Stage = { id: string; label: string; state: 'completed' | 'current' | 'upcoming'; date?: string | null };
+export type Embryo = { id: string; label: string; stage: string; status: string; observationDate: string; releasedAt: string; releasedBy: string; summary: string; source: string };
+export type Activity = { id: string; type: 'consultation' | 'lab' | 'procedure' | 'care'; title: string; occurredAt: string; status: string; clinician: string; branch: string; summary: string; instructions: string[]; source: string };
+export type Appointment = { id: string; title: string; clinician: string; branch: string; startsAt: string; timeZone: string; status: 'confirmed' | 'completed' | 'cancelled' | 'rescheduled' | 'no_show'; location: string; preparation: string[]; source: string };
+export type Reminder = { id: string; title: string; detail: string; dueAt: string; completed: boolean; source: string };
+export type NotificationItem = { id: string; title: string; body: string; createdAt: string; read: boolean };
+export type Preferences = { serviceNotifications: boolean; discreetNotifications: boolean; partnerSharing: boolean };
+export type Overview = {
+  dataMode: 'DEMO';
+  patient: { id: string; displayName: string; recordNumber: string; branchId: string; branchName: string; timeZone: string };
+  sync: { lastSyncedAt: string; status: 'current' | 'delayed' | 'unavailable'; message: string };
+  cycle: { id: string; program: string; title: string; status: string; startedAt: string; nextStep: string; stages: Stage[] };
+  embryos: Embryo[]; activities: Activity[]; appointments: Appointment[]; reminders: Reminder[]; notifications: NotificationItem[];
+  preferences: Preferences;
+};
+export type ChatReply = { id: string; text: string; intent: string; sourceLabel: string; requiresStaff: boolean; createdAt: string };
+export type ChatMessage = ChatReply & { role: 'user' | 'assistant' };
+export type CareRequest = { type: 'APPOINTMENT_CHANGE' | 'CONTACT_NURSE'; appointmentId?: string; note: string };
+export type CareReceipt = { id: string; status: 'received_demo'; message: string; createdAt: string };
+export type Detail = { type: 'embryo'; item: Embryo } | { type: 'activity'; item: Activity } | { type: 'appointment'; item: Appointment } | { type: 'notifications' } | { type: 'help' } | { type: 'facilities' } | { type: 'request'; appointment?: Appointment };

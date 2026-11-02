@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-11-01T10:57:27.191145+00:00",
+  "scope": "Native Expo Go58.0.5 / Android35 Google APIs revision9 / API demo; emulator GPS injection, not physical GPS",
+  "syntheticPosition": {
+    "latitude": -6.195055,
+    "longitude": 106.8338607
+  },
+  "checks": [
+    "Google AVD renders redesigned API home without automatic permission prompt",
+    "Explicit foreground lookup detects injected Jakarta position with native provider",
+    "Native UI displays location accuracy",
+    "Jakarta is the first nearest directory card; maps are not opened",
+    "Location state survives native tab navigation",
+    "Clear removes location from native session state",
+    "Searching nearby branches leaves official appointments unchanged"
+  ],
+  "passed": 7,
+  "error": null,
+  "foregroundPermissionDialogObserved": false
+}

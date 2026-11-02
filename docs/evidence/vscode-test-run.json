@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-11-01T10:02:48.533Z",
+  "scope": "Exact configured task commands and sequential dependencies executed from project root; VS Code UI task picker not automated",
+  "results": [
+    {
+      "task": "Morula: Java tests (Docker Java 21)",
+      "exitCode": 0
+    },
+    {
+      "task": "Morula: backend ready (keep image)",
+      "exitCode": 0
+    },
+    {
+      "task": "Morula: TypeScript check",
+      "exitCode": 0
+    },
+    {
+      "task": "Morula: verify HTTP",
+      "exitCode": 0
+    },
+    {
+      "task": "Morula: backend ready (keep image)",
+      "exitCode": 0
+    },
+    {
+      "task": "Morula: browser API smoke",
+      "exitCode": 0
+    },
+    {
+      "task": "Morula: TypeScript check",
+      "exitCode": 0
+    },
+    {
+      "task": "Morula: iOS bundle validation (not simulator)",
+      "exitCode": 0
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-11-01T09:50:00.1806981Z",
+  "hostFreeMiB": 830.0,
+  "qemuPid": 5472,
+  "qemuResidentMiB": 2444.0,
+  "qemuPrivateMiB": 4267.0,
+  "requestedGuestMiB": 1536,
+  "effectiveGuestMiB": 2560,
+  "fontScaleRestored": "1.0",
+  "filteredNativeErrorLines": 0
+}

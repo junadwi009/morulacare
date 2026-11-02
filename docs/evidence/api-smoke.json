@@ -1,0 +1,15 @@
+{
+  "passed": 10,
+  "checks": [
+    "health",
+    "unauthorized",
+    "serialized_overview",
+    "identity_scope",
+    "long_note",
+    "idempotent_receipt",
+    "conflict",
+    "schedule_preserved",
+    "chat_source",
+    "partner_refused"
+  ]
+}

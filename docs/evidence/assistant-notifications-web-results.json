@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-11-01T14:48:59.223362+00:00",
+  "checks": [
+    "Concise assistant welcome retains suggestions and an explicit clinical-boundary disclosure",
+    "Actual API reply provenance appears on request instead of repeating technical strips",
+    "Retry success and failure preserve an edited composer draft without duplicate user bubbles",
+    "Rapid send creates one request; pending reply and composer draft survive tab navigation",
+    "Clinical questions still lead to the actual demo staff-help form",
+    "Assistant composer stays reachable across compact, wide and landscape layouts",
+    "Unread notification opens stable detail, then disappears from the unread filter and stays read after reopen",
+    "Read-all and settings navigation work; refresh keeps session markers and cold reload returns unchanged API state",
+    "Empty notification inbox gives clear guidance and a working settings action",
+    "Official appointments remain unchanged and no page errors occur"
+  ],
+  "error": null,
+  "scope": "Local API / assistant UI and notification session markers; no push, hospital message or read-state API write",
+  "passed": 10,
+  "pageErrors": []
+}

@@ -1,0 +1,32 @@
+{
+  "passed": 26,
+  "checks": [
+    "local:home",
+    "local:reminder_acknowledgement",
+    "local:embryo_shortcut",
+    "local:released_result_provenance",
+    "local:care_history_filter_and_detail",
+    "local:appointment_history",
+    "local:request_receipt_schedule_preserved",
+    "local:chat_schedule",
+    "local:chat_clinical_handoff",
+    "local:privacy_preferences",
+    "local:notification_disclosure",
+    "api:home",
+    "api:reminder_acknowledgement",
+    "api:embryo_shortcut",
+    "api:released_result_provenance",
+    "api:care_history_filter_and_detail",
+    "api:appointment_history",
+    "api:request_receipt_schedule_preserved",
+    "api:chat_schedule",
+    "api:chat_clinical_handoff",
+    "api:privacy_preferences",
+    "api:notification_disclosure",
+    "api:no_silent_synthetic_fallback",
+    "api:stale_warning_survives_preference_update",
+    "api:sync_recovers",
+    "api:empty_results_do_not_imply_failure"
+  ],
+  "errors": []
+}

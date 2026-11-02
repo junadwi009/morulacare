@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-11-01T14:45:56.331004+00:00",
+  "checks": [],
+  "error": "Native target not found: Kirim pesan",
+  "scope": "Owned Android35 Google AVD, standalone API; session-only read markers, no push or hospital messages",
+  "passed": 0,
+  "fontScaleRestored": "1.0",
+  "stylusHandwritingSettingRestored": "null"
+}

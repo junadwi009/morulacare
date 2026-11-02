@@ -1,0 +1,61 @@
+[
+  {
+    "id": "doctor-maya",
+    "name": "dr. Maya Pratama",
+    "specialty": "Obstetri & Ginekologi",
+    "gender": "female",
+    "experienceYears": 12,
+    "languages": [
+      "Indonesia",
+      "English"
+    ],
+    "branchId": "MJKT",
+    "branchName": "Morula IVF Jakarta",
+    "bio": "Profil dokter fiktif untuk mencoba konsultasi fertilitas dan preferensi jadwal.",
+    "imageKey": "maya"
+  },
+  {
+    "id": "doctor-arif",
+    "name": "dr. Arif Santoso",
+    "specialty": "Andrologi",
+    "gender": "male",
+    "experienceYears": 10,
+    "languages": [
+      "Indonesia",
+      "English"
+    ],
+    "branchId": "MJKT",
+    "branchName": "Morula IVF Jakarta",
+    "bio": "Profil dokter fiktif untuk mencoba pilihan konsultasi kesehatan reproduksi pria.",
+    "imageKey": "arif"
+  },
+  {
+    "id": "doctor-nadia",
+    "name": "dr. Nadia Putri",
+    "specialty": "Obstetri & Ginekologi",
+    "gender": "female",
+    "experienceYears": 9,
+    "languages": [
+      "Indonesia"
+    ],
+    "branchId": "MBDG",
+    "branchName": "Morula IVF Melinda Bandung",
+    "bio": "Profil dokter fiktif untuk mencoba pilihan dokter dan kunjungan lanjutan.",
+    "imageKey": "nadia"
+  },
+  {
+    "id": "doctor-bima",
+    "name": "dr. Bima Wijaya",
+    "specialty": "Obstetri & Ginekologi",
+    "gender": "male",
+    "experienceYears": 15,
+    "languages": [
+      "Indonesia",
+      "English"
+    ],
+    "branchId": "MBDG",
+    "branchName": "Morula IVF Melinda Bandung",
+    "bio": "Profil dokter fiktif untuk mencoba konsultasi rencana perawatan bersama dokter pilihan.",
+    "imageKey": "bima"
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-11-01T10:45:05.148Z",
+  "index": "https://www.morulaivf.co.id/lokasi-klinik/",
+  "coordinateSource": "Official branch page Arahkan ke Lokasi destination query",
+  "branches": [
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-jakarta/",
+      "latitude": -6.195055,
+      "longitude": 106.8338607,
+      "htmlSha256": "2d08010d14382c8612b4cb8fb925eec9fd7dc72015494f428a392c6309ae4a97"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-international-fertility-clinic/",
+      "latitude": -6.306958401256231,
+      "longitude": 106.65518849576422,
+      "htmlSha256": "16870db80409b0e8f915c2507b975a681353ede98d55ad7cb66e714c5e9a063a"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-ciputat/",
+      "latitude": -6.3276236,
+      "longitude": 106.7444562,
+      "htmlSha256": "da9b3f8873064992afb6486b7df24330afd45c872dde483abee1e615ea4f3a40"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-yogyakarta/",
+      "latitude": -7.7577968,
+      "longitude": 110.4044668,
+      "htmlSha256": "265b2cd1c75eb2af2f09ae06ec453d4277d99e5e6c482cc1cee7b194c48f9c58"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-makassar/",
+      "latitude": -5.1445829,
+      "longitude": 119.4121325,
+      "htmlSha256": "d996241a47a1964e622f431303f84bbe16985e839e857ff9281195320a5e5697"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-pontianak/",
+      "latitude": -0.0614423,
+      "longitude": 109.3503277,
+      "htmlSha256": "512a5befe1dc56649e68d0b0bbda96cf7b0ab193d480d0f700d4e81e40e5be45"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-melinda-bandung/",
+      "latitude": -6.906233,
+      "longitude": 107.5957471,
+      "htmlSha256": "e79ddb18bbbe2b1ade70218174106445b5a4f3931e1fb30bef343a808c243ff7"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-margonda/",
+      "latitude": -6.3652337,
+      "longitude": 106.8316451,
+      "htmlSha256": "de934d5795538aa6e48f12defc693008ad484e77b1516b01395a9ada63127222"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-padang/",
+      "latitude": -0.950852,
+      "longitude": 100.365028,
+      "htmlSha256": "9a3e012745c1e5a7eb14399ccadb68cc41715e0bf5934f2ac64404e9c04c906f"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-surabaya/",
+      "latitude": -7.2994181,
+      "longitude": 112.6738125,
+      "htmlSha256": "26aeff6c5530d0614dfc5cbce9422a09a6039d4dbf9e68af67488b055d7d09d4"
+    },
+    {
+      "sourceUrl": "https://www.morulaivf.co.id/lokasi-klinik/morula-ivf-denpasar/",
+      "latitude": -8.6369627,
+      "longitude": 115.1816639,
+      "htmlSha256": "081dd4dcbe286ee01145e2f1d428d099449d2a3b499ed240928334e41a68f47f"
+    }
+  ]
+}

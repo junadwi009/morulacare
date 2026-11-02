@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-11-01T08:35:35.970Z",
+  "command": "docker compose -p morula-care-local --profile tools run --build --rm verify",
+  "runtime": {
+    "java": "21.0.9 build / 21.0.13 runtime",
+    "maven": "3.9.11",
+    "springBoot": "3.5.16",
+    "flyway": "11.7.2",
+    "postgresqlJdbc": "42.7.11",
+    "postgresql": "17.6"
+  },
+  "totals": {
+    "tests": 37,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "kind": "surefire",
+      "name": "id.co.morula.care.DemoApiTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "kind": "surefire",
+      "name": "id.co.morula.care.DemoAssistantTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "kind": "surefire",
+      "name": "id.co.morula.care.DemoAutomationApiTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "kind": "surefire",
+      "name": "id.co.morula.care.DemoAutomationTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "kind": "surefire",
+      "name": "id.co.morula.care.DemoStorageConfigurationTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "kind": "surefire",
+      "name": "id.co.morula.care.ModeGuardTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "kind": "failsafe",
+      "name": "id.co.morula.care.PostgresDemoStoreIT",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ]
+}

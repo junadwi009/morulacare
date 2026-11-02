@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-11-01T14:33:20.240574+00:00",
+  "resumed": "topResumedActivity=ActivityRecord{a53e719 u0 com.example.morulacare.concept/.MainActivity t47}",
+  "expoGoRunning": false,
+  "metroRunning": false,
+  "apiHealth": "UP",
+  "emulatorLeftRunning": true,
+  "launcherFlowerObserved": true,
+  "nativeSplashResourceInspected": true,
+  "nativeSplashThemeReferenceVerified": true,
+  "osSplashScreenshotCaptured": false,
+  "installedApkSha256": "d7b530613ae68f7ccc2b0858b795f7f2d03b9f1d2fe177e1f59558d574cecf7f",
+  "installedApkMatchesArtifact": true,
+  "finalPage": "Dokter / Cari dokter",
+  "fontScale": "1.0",
+  "stylusHandwritingRestored": "null"
+}

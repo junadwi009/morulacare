@@ -1,0 +1,2 @@
+# Preserve PDF bytes even when the PDF contains mostly ASCII data.
+*.pdf binary

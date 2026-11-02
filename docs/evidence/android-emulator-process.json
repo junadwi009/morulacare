@@ -1,0 +1,9 @@
+{
+  "pid": 26876,
+  "avd": "MorulaCare_Google_API_35",
+  "serial": "emulator-5580",
+  "requestedMemoryMiB": 1536,
+  "cores": 2,
+  "startedAt": "2026-11-01T13:27:46.645Z",
+  "note": "The emulator may raise RAM to its image minimum; inspect stdout for effective RAM."
+}

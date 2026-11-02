@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-11-01T14:15:42.335855+00:00",
+  "resumed": "topResumedActivity=ActivityRecord{3bc0876 u0 com.example.morulacare.concept/.MainActivity t41}",
+  "expoGoRunning": false,
+  "metroRunning": false,
+  "apiHealth": "UP",
+  "emulatorLeftRunning": true,
+  "launcherFlowerObserved": true,
+  "nativeSplashResourceInspected": true,
+  "nativeSplashThemeReferenceVerified": true,
+  "osSplashScreenshotCaptured": false,
+  "installedApkSha256": "11998ab9b5075b10e4e18fa70179f9a0b5dc9cf515d3a191daa59613ed7a52b9",
+  "installedApkMatchesArtifact": true,
+  "finalPage": "Perjalanan / Program",
+  "fontScale": "1.0",
+  "stylusHandwritingRestored": "null"
+}

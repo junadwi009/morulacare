@@ -1,0 +1,1 @@
+{"migrationVersions" : ["1"], "requestRows" : 3, "idempotencyRows" : 3, "preferencesRows" : 1, "acknowledgementRows" : 2, "remainingTestSchemas" : 0}

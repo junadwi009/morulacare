@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-11-01T09:45:54.415046+00:00",
+  "runtime": "Expo Go58.0.5 native Android15/API35 x86_64",
+  "avd": "MorulaCare_API_35",
+  "serial": "emulator-5580",
+  "checks": [
+    "Native API-mode overview and all five navigation tabs",
+    "Native preference mutation reached API and partner boundary remains",
+    "Native home/profile render and navigation at font scale1.3",
+    "Official appointments remain unchanged after native test flows"
+  ],
+  "passed": 4,
+  "error": null,
+  "fontScaleRestored": "1.0",
+  "subset": "profile-font-only",
+  "scope": "Native Expo Go acceptance; standalone Morula APK not built"
+}

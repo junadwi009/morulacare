@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Morula: debug HTTP verification",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "C:/Program Files/nodejs/node.exe",
+      "program": "${workspaceFolder}/scripts/verify-local.mjs",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "preLaunchTask": "Morula: backend ready (keep image)"
+    },
+    {
+      "name": "Morula: debug browser smoke (API)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/verify-web.py",
+      "python": "${env:USERPROFILE}/codex-development-setup/2026-11-01/tools/python/Scripts/python.exe",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "preLaunchTask": "Morula: backend ready (keep image)"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-11-01T14:33:56.856450+00:00",
+  "artifact": {
+    "timestamp": "2026-11-01T14:27:13.861Z",
+    "artifact": "artifacts/android/MorulaCare-local-api-x86_64.apk",
+    "bytes": 35594822,
+    "sha256": "d7b530613ae68f7ccc2b0858b795f7f2d03b9f1d2fe177e1f59558d574cecf7f",
+    "variant": "release",
+    "architecture": "x86_64",
+    "package": "com.example.morulacare.concept",
+    "mode": "API demo",
+    "apiUrl": "http://127.0.0.1:8080",
+    "embeddedJavaScript": true,
+    "staging": "C:\\morula-local-apk",
+    "signing": "Expo template debug test key; not a production upload key",
+    "sourceFingerprint": "1be4c81578a80257cabd76e67d5171d2ef09684569ab04fed2d5a151c99c95ba",
+    "cloudUsed": false
+  },
+  "reports": {
+    "doctor-flow-web-results.json": {
+      "passed": 9,
+      "timestamp": "2026-11-01T14:24:32.372716+00:00"
+    },
+    "photo-booking-web-results.json": {
+      "passed": 12,
+      "timestamp": "2026-11-01T14:24:47.197209+00:00"
+    },
+    "ux-journey-results.json": {
+      "passed": 10,
+      "timestamp": "2026-11-01T14:24:56.326431+00:00"
+    },
+    "doctor-flow-native-booking-results.json": {
+      "passed": 6,
+      "timestamp": "2026-11-01T14:27:56.736702+00:00"
+    },
+    "doctor-flow-native-font-results.json": {
+      "passed": 2,
+      "timestamp": "2026-11-01T14:30:10.837832+00:00"
+    },
+    "standalone-apk-verification.json": {
+      "passed": 9,
+      "timestamp": "2026-11-01T14:27:46.019566+00:00"
+    }
+  },
+  "webPassed": 31,
+  "nativePassed": 8,
+  "artifactPassed": 9,
+  "ready": {
+    "timestamp": "2026-11-01T14:33:20.240574+00:00",
+    "resumed": "topResumedActivity=ActivityRecord{a53e719 u0 com.example.morulacare.concept/.MainActivity t47}",
+    "expoGoRunning": false,
+    "metroRunning": false,
+    "apiHealth": "UP",
+    "emulatorLeftRunning": true,
+    "launcherFlowerObserved": true,
+    "nativeSplashResourceInspected": true,
+    "nativeSplashThemeReferenceVerified": true,
+    "osSplashScreenshotCaptured": false,
+    "installedApkSha256": "d7b530613ae68f7ccc2b0858b795f7f2d03b9f1d2fe177e1f59558d574cecf7f",
+    "installedApkMatchesArtifact": true,
+    "finalPage": "Dokter / Cari dokter",
+    "fontScale": "1.0",
+    "stylusHandwritingRestored": "null"
+  },
+  "error": null,
+  "scope": "Owned Google API35 emulator, local test-signed x86_64 standalone API demo; no physical/iOS/patient acceptance"
+}

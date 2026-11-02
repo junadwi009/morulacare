@@ -1,0 +1,43 @@
+{
+  "dataMode": "DEMO",
+  "patient": {"id":"patient-demo","displayName":"Nadia (demo)","recordNumber":"DEMO-001","branchId":"MJKT","branchName":"Morula IVF Jakarta","timeZone":"Asia/Jakarta"},
+  "sync": {"lastSyncedAt":"2026-10-31T09:15:00+07:00","status":"current","message":"Snapshot demo · 31 Okt 2026. Belum terhubung ke sistem rumah sakit."},
+  "cycle": {
+    "id":"cycle-demo-01","program":"IVF","title":"Selangkah, bersama Anda","status":"Menunggu konsultasi rencana berikutnya","startedAt":"2026-10-12T09:00:00+07:00",
+    "nextStep":"Tinjau hasil yang telah dirilis bersama dokter pada janji berikutnya.",
+    "stages":[
+      {"id":"assessment","label":"Konsultasi awal","state":"completed","date":"2026-10-12"},
+      {"id":"stimulation","label":"Pemantauan","state":"completed","date":"2026-10-16"},
+      {"id":"retrieval","label":"Pengambilan sel telur","state":"completed","date":"2026-10-23"},
+      {"id":"laboratory","label":"Laporan embrio","state":"completed","date":"2026-10-28"},
+      {"id":"review","label":"Rencana berikutnya","state":"current","date":"2026-11-02"},
+      {"id":"followup","label":"Tindak lanjut","state":"upcoming","date":null}
+    ]
+  },
+  "embryos":[
+    {"id":"emb-demo-01","label":"Embrio 01","stage":"Blastokista","status":"Disimpan","observationDate":"2026-10-28T10:00:00+07:00","releasedAt":"2026-10-28T15:00:00+07:00","releasedBy":"Tim embriologi (demo)","summary":"Laporan yang telah dirilis mencatat penyimpanan embrio. Rencana penggunaan dibahas bersama dokter.","source":"Laporan laboratorium sintetis"},
+    {"id":"emb-demo-02","label":"Embrio 02","stage":"Blastokista","status":"Disimpan","observationDate":"2026-10-28T10:00:00+07:00","releasedAt":"2026-10-28T15:00:00+07:00","releasedBy":"Tim embriologi (demo)","summary":"Laporan yang telah dirilis mencatat penyimpanan embrio. Informasi ini tidak menyatakan peluang keberhasilan individual.","source":"Laporan laboratorium sintetis"},
+    {"id":"emb-demo-03","label":"Embrio 03","stage":"Blastokista","status":"Tinjauan rencana perawatan","observationDate":"2026-10-28T10:00:00+07:00","releasedAt":"2026-10-28T15:00:00+07:00","releasedBy":"Tim embriologi (demo)","summary":"Dokter akan menjelaskan laporan dan pilihan tindak lanjut pada konsultasi berikutnya. Tidak ada keputusan tindakan otomatis.","source":"Laporan laboratorium sintetis"}
+  ],
+  "activities":[
+    {"id":"activity-lab","type":"lab","title":"Laporan perkembangan embrio","occurredAt":"2026-10-28T15:00:00+07:00","status":"Dirilis","clinician":"Tim embriologi (demo)","branch":"Morula IVF Jakarta","summary":"Laporan embrio tersedia untuk dibahas bersama tim klinik.","instructions":["Catat pertanyaan untuk konsultasi berikutnya."],"source":"Laporan laboratorium sintetis"},
+    {"id":"activity-procedure","type":"procedure","title":"Pengambilan sel telur","occurredAt":"2026-10-23T09:00:00+07:00","status":"Selesai","clinician":"Dokter penanggung jawab (demo)","branch":"Morula IVF Jakarta","summary":"Contoh catatan tindakan yang telah selesai dan dirilis kepada pasien.","instructions":["Ikuti instruksi tertulis dari tim klinik.","Hubungi klinik bila ada pertanyaan terkait pemulihan."],"source":"Catatan perawatan sintetis"},
+    {"id":"activity-monitoring","type":"care","title":"Pemantauan program","occurredAt":"2026-10-16T10:30:00+07:00","status":"Selesai","clinician":"Perawat koordinator (demo)","branch":"Morula IVF Jakarta","summary":"Rencana perawatan telah ditinjau bersama tim klinik.","instructions":["Perubahan rencana harus dikonfirmasi oleh tim klinik."],"source":"Catatan perawatan sintetis"},
+    {"id":"activity-consultation","type":"consultation","title":"Konsultasi awal","occurredAt":"2026-10-12T09:00:00+07:00","status":"Selesai","clinician":"Dokter penanggung jawab (demo)","branch":"Morula IVF Jakarta","summary":"Contoh asesmen awal dan diskusi rencana program individual.","instructions":["Simpan daftar pertanyaan Anda."],"source":"Catatan perawatan sintetis"}
+  ],
+  "appointments":[
+    {"id":"apt-next","title":"Konsultasi rencana berikutnya","clinician":"Dokter penanggung jawab (demo)","branch":"Morula IVF Jakarta","startsAt":"2026-11-02T10:00:00+07:00","timeZone":"Asia/Jakarta","status":"confirmed","location":"Lantai konsultasi · lokasi demo","preparation":["Siapkan daftar pertanyaan.","Jadwal ini merupakan data sintetis; bukan reservasi klinik."],"source":"Jadwal sistem sintetis"},
+    {"id":"apt-procedure","title":"Pengambilan sel telur","clinician":"Dokter penanggung jawab (demo)","branch":"Morula IVF Jakarta","startsAt":"2026-10-23T09:00:00+07:00","timeZone":"Asia/Jakarta","status":"completed","location":"Ruang tindakan · lokasi demo","preparation":[],"source":"Jadwal sistem sintetis"},
+    {"id":"apt-consultation","title":"Konsultasi awal","clinician":"Dokter penanggung jawab (demo)","branch":"Morula IVF Jakarta","startsAt":"2026-10-12T09:00:00+07:00","timeZone":"Asia/Jakarta","status":"completed","location":"Ruang konsultasi · lokasi demo","preparation":[],"source":"Jadwal sistem sintetis"},
+    {"id":"apt-rescheduled","title":"Pemantauan program","clinician":"Perawat koordinator (demo)","branch":"Morula IVF Jakarta","startsAt":"2026-10-15T10:00:00+07:00","timeZone":"Asia/Jakarta","status":"rescheduled","location":"Ruang konsultasi · lokasi demo","preparation":[],"source":"Jadwal sistem sintetis"}
+  ],
+  "reminders":[
+    {"id":"rem-questions","title":"Siapkan pertanyaan konsultasi","detail":"Tulis hal yang ingin Anda diskusikan dengan dokter. Tanda selesai hanya catatan Anda.","dueAt":"2026-11-01T18:00:00+07:00","completed":false,"source":"Pengingat demo"},
+    {"id":"rem-report","title":"Baca laporan yang telah dirilis","detail":"Baca ringkasan terbaru sebelum konsultasi. Pembacaan bukan persetujuan tindakan.","dueAt":"2026-11-01T18:00:00+07:00","completed":false,"source":"Pengingat demo"}
+  ],
+  "notifications":[
+    {"id":"notif-report","title":"Ada pembaruan untuk Anda","body":"Buka aplikasi untuk melihat pembaruan yang telah dirilis.","createdAt":"2026-10-28T15:05:00+07:00","read":false},
+    {"id":"notif-appointment","title":"Jadwal Anda telah diperbarui","body":"Periksa rincian janji di aplikasi. Contoh notifikasi demo.","createdAt":"2026-10-28T14:00:00+07:00","read":true}
+  ],
+  "preferences":{"serviceNotifications":true,"discreetNotifications":true,"partnerSharing":false}
+}

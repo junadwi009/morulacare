@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-11-01T13:30:28.898857+00:00",
+  "checks": [
+    "Native standalone visual Home renders generated doctor assets",
+    "Native gender preference and favorite doctor selection work"
+  ],
+  "error": "Could not determine actual Android keyboard top inset",
+  "scope": "Standalone Android35 Google APIs; fictional doctor booking against local API/Postgres; no Expo Go/Metro",
+  "passed": 2,
+  "createdBookingIds": [],
+  "cleanupErrors": []
+}

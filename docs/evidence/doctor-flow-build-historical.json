@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-11-01T14:27:13.861Z",
+  "artifact": "artifacts/android/MorulaCare-local-api-x86_64.apk",
+  "bytes": 35594822,
+  "sha256": "d7b530613ae68f7ccc2b0858b795f7f2d03b9f1d2fe177e1f59558d574cecf7f",
+  "variant": "release",
+  "architecture": "x86_64",
+  "package": "com.example.morulacare.concept",
+  "mode": "API demo",
+  "apiUrl": "http://127.0.0.1:8080",
+  "embeddedJavaScript": true,
+  "staging": "C:\\morula-local-apk",
+  "signing": "Expo template debug test key; not a production upload key",
+  "sourceFingerprint": "1be4c81578a80257cabd76e67d5171d2ef09684569ab04fed2d5a151c99c95ba",
+  "cloudUsed": false
+}

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-11-01T14:24:32.372716+00:00",
+  "checks": [
+    "Concise doctor profile discloses its bio and opens a separate date/time step",
+    "Changing date clears time; editing review/back preserves the chosen schedule and draft",
+    "Schedule selection fits small, wide and landscape viewports",
+    "A fully occupied day is disabled and the first available day is selected",
+    "No available day cannot advance to a false booking review",
+    "Schedule load failure blocks review and retry restores actual available slots",
+    "Time labels and day-part groups follow the slot timezone instead of the device timezone",
+    "A late schedule response for a previous doctor cannot replace the current doctor slots",
+    "Clinical appointments remain unchanged and no uncaught page errors occur"
+  ],
+  "error": null,
+  "scope": "Doctor profile/schedule UI; real local API plus controlled slot responses; no reservation created",
+  "passed": 9,
+  "pageErrors": []
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+	<testcase name="official directory has unique identities, validated coordinates and source URLs" time="0.001986" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="distance is symmetric and zero at the same point" time="0.000241" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="sort nearest known branch first without mutating source" time="0.000489" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="manual city/name/address search works without inventing a location or distance" time="0.013024" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="invalid location never reaches distance sorting" time="0.000423" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="permission denial never requests coordinates" time="0.000592" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="disabled services do not request permission or coordinates" time="0.000251" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="valid approximate location remains usable with reported accuracy" time="0.000254" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="invalid or stale location is rejected" time="0.000372" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="permission timeout prevents a late grant from starting coordinate lookup" time="0.036881" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="location provider errors produce an actionable unavailable result" time="0.000636" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="cancellation prevents a late permission grant from starting coordinate lookup" time="0.030123" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="cancellation during service check prevents a later permission prompt" time="0.001506" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="reading the permission dialog does not spend the GPS lookup budget" time="0.045904" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<testcase name="GPS lookup has its own bounded timeout after permission" time="0.015830" classname="test" file="C:\Users\User.LAPTOP-OROCJQ8C.000\Downloads\Project\morulacare\scripts\facility-search.test.mjs"/>
+	<!-- tests 15 -->
+	<!-- suites 0 -->
+	<!-- pass 15 -->
+	<!-- fail 0 -->
+	<!-- cancelled 0 -->
+	<!-- skipped 0 -->
+	<!-- todo 0 -->
+	<!-- duration_ms 353.3982 -->
+</testsuites>

@@ -1,0 +1,513 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Morula: backend start",
+      "type": "process",
+      "command": "C:\\Users\\User.LAPTOP-OROCJQ8C.000\\AppData\\Local/Programs/DockerDesktop/resources/bin/docker.exe",
+      "args": [
+        "compose",
+        "-p",
+        "morula-care-local",
+        "up",
+        "-d",
+        "--build",
+        "api"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: backend logs",
+      "type": "process",
+      "command": "C:\\Users\\User.LAPTOP-OROCJQ8C.000\\AppData\\Local/Programs/DockerDesktop/resources/bin/docker.exe",
+      "args": [
+        "compose",
+        "-p",
+        "morula-care-local",
+        "logs",
+        "-f",
+        "--tail",
+        "100",
+        "api"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: stop services (keep data)",
+      "type": "process",
+      "command": "C:\\Users\\User.LAPTOP-OROCJQ8C.000\\AppData\\Local/Programs/DockerDesktop/resources/bin/docker.exe",
+      "args": [
+        "compose",
+        "-p",
+        "morula-care-local",
+        "stop"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: Expo web API mode",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/npm.cmd",
+      "args": [
+        "run",
+        "web",
+        "--",
+        "--port",
+        "8081",
+        "--localhost",
+        "--max-workers",
+        "1"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/mobile"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: TypeScript check",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/mobile"
+      },
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": "test"
+    },
+    {
+      "label": "Morula: Java tests (Docker Java 21)",
+      "type": "process",
+      "command": "C:\\Users\\User.LAPTOP-OROCJQ8C.000\\AppData\\Local/Programs/DockerDesktop/resources/bin/docker.exe",
+      "args": [
+        "compose",
+        "-p",
+        "morula-care-local",
+        "--profile",
+        "tools",
+        "run",
+        "--rm",
+        "verify"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": "test"
+    },
+    {
+      "label": "Morula: verify HTTP",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/verify-local.mjs"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: verify persistence (restart project)",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/verify-local.mjs",
+        "--restart"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "dependsOn": [
+        "Morula: backend ready (keep image)"
+      ],
+      "group": "test"
+    },
+    {
+      "label": "Morula: Android doctor",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/android-local.mjs",
+        "doctor"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: Android run (Expo Go)",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/android-local.mjs",
+        "run",
+        "--visible",
+        "--google"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: Android stop (owned emulator)",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/android-local.mjs",
+        "stop",
+        "--google"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: verify basic",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Morula: backend ready (keep image)",
+        "Morula: TypeScript check",
+        "Morula: verify HTTP"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "detail": "Start API/PostgreSQL and wait for health, then TypeScript and HTTP checks. No service stop."
+    },
+    {
+      "label": "Morula: backend ready (keep image)",
+      "type": "process",
+      "command": "C:\\Users\\User.LAPTOP-OROCJQ8C.000\\AppData\\Local/Programs/DockerDesktop/resources/bin/docker.exe",
+      "args": [
+        "compose",
+        "-p",
+        "morula-care-local",
+        "up",
+        "-d",
+        "--wait",
+        "--wait-timeout",
+        "180",
+        "api"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: browser API smoke",
+      "type": "process",
+      "command": "C:\\Users\\User.LAPTOP-OROCJQ8C.000/codex-development-setup/2026-11-01/tools/python/Scripts/python.exe",
+      "args": [
+        "scripts/verify-web.py"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": "test",
+      "dependsOn": [
+        "Morula: backend ready (keep image)"
+      ],
+      "detail": "15 real-API browser checks; start Expo web on port 8081 first."
+    },
+    {
+      "label": "Morula: iOS bundle validation (not simulator)",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/verify-ios.mjs"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": "test",
+      "dependsOn": [
+        "Morula: TypeScript check"
+      ],
+      "detail": "iOS Hermes export and artifact checks in API mode. Does not launch native iOS."
+    },
+    {
+      "label": "Morula: test all available (sequential)",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Morula: Java tests (Docker Java 21)",
+        "Morula: verify basic",
+        "Morula: browser API smoke",
+        "Morula: iOS bundle validation (not simulator)",
+        "Morula: facility location logic tests",
+        "Morula: facility browser smoke"
+      ],
+      "group": "test",
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "detail": "Java/PostgreSQL, TypeScript, HTTP, browser, iOS bundle; excludes native iOS and Android emulator. Expo web must already run."
+    },
+    {
+      "label": "Morula: facility location logic tests",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "--test",
+        "scripts/facility-search.test.mjs"
+      ],
+      "group": "test",
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "Morula: facility browser smoke",
+      "type": "process",
+      "command": "C:\\Users\\User.LAPTOP-OROCJQ8C.000/codex-development-setup/2026-11-01/tools/python/Scripts/python.exe",
+      "args": [
+        "scripts/verify-facility-web.py"
+      ],
+      "group": "test",
+      "dependsOn": [
+        "Morula: backend ready (keep image)"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "Morula: APK prepare (local)",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/build-android-local.mjs",
+        "prepare"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: APK build standalone",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/build-android-local.mjs",
+        "build"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "dependsOn": [
+        "Morula: APK prepare (local)"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Morula: APK install and run (API)",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/android-apk-local.mjs",
+        "run"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "dependsOn": [
+        "Morula: backend ready (keep image)"
+      ]
+    },
+    {
+      "label": "Morula: APK open installed (API)",
+      "type": "process",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": [
+        "scripts/android-apk-local.mjs",
+        "open"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "dependsOn": [
+        "Morula: backend ready (keep image)"
+      ]
+    },
+    {
+      "label": "Morula: UX journey browser checks",
+      "type": "process",
+      "command": "C:/Users/User.LAPTOP-OROCJQ8C.000/codex-development-setup/2026-11-01/tools/python/Scripts/python.exe",
+      "args": [
+        "scripts/verify-ux-journey.py"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Morula: doctor booking browser checks",
+      "type": "process",
+      "command": "C:/Users/User.LAPTOP-OROCJQ8C.000/codex-development-setup/2026-11-01/tools/python/Scripts/python.exe",
+      "args": [
+        "scripts/verify-doctor-booking-web.py"
+      ],
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ],
+  "options": {
+    "cwd": "${workspaceFolder}",
+    "env": {
+      "PATH": "C:\\Program Files\\nodejs;${env:PATH}"
+    }
+  }
+}

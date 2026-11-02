@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-11-01T09:50:04.6454478Z",
+  "hostFreeMiB": 3221.0,
+  "ownedQemuAlive": false,
+  "adbDevices": "List of devices attached",
+  "apiHealth": "UP",
+  "metroStatus": 200
+}

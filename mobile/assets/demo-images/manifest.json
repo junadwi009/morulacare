@@ -1,0 +1,42 @@
+{
+  "generator": "Built-in image_gen",
+  "fictionalPeople": true,
+  "purpose": "Replaceable Morula Care concept doctor/hero assets; not real staff",
+  "assets": [
+    {
+      "file": "consultation-hero.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1721438,
+      "sha256": "d5c7939b660b4f55bfeb3138818724b42a5a8a44ef9d4ff2908979b6f5a3ffc8"
+    },
+    {
+      "file": "doctor-arif.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1766342,
+      "sha256": "16a27d6b197d9438b0cb55e702b250226f1c6ae4c84a9e6c89314b5a0d0bf6bd"
+    },
+    {
+      "file": "doctor-bima.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1741822,
+      "sha256": "61c0631ea81cfda237f4d87a46f88d64c0562de9dc40d8d3b1ebba64012b033c"
+    },
+    {
+      "file": "doctor-maya.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1804757,
+      "sha256": "1ecc272be997ac3327da1b7fa972705ee63772f7af85dcad798e25a4b7586bc7"
+    },
+    {
+      "file": "doctor-nadia.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1692790,
+      "sha256": "fb58805157228648778d0fd3d7ac55eb111903c5755cd62293a30d0247fc812b"
+    }
+  ]
+}

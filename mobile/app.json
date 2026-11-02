@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Morula Care — Concept",
+    "slug": "morula-care-concept",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "morulacareconcept",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.morulacare.concept",
+      "icon": "./assets/brand/app-icon.png"
+    },
+    "android": {
+      "package": "com.example.morulacare.concept",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/brand/adaptive-icon.png",
+        "monochromeImage": "./assets/brand/adaptive-monochrome.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "blockedPermissions": [
+        "android.permission.ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "Morula Care — Concept",
+      "output": "single",
+      "favicon": "./assets/brand/favicon.png",
+      "backgroundColor": "#FFFFFF",
+      "themeColor": "#BC4416"
+    },
+    "plugins": [
+      "expo-status-bar",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/brand/splash-mark.png",
+          "imageWidth": 160,
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Morula Care menggunakan lokasi saat Anda memilihnya untuk mencari cabang terdekat. Lokasi tidak disimpan.",
+          "isAndroidBackgroundLocationEnabled": false,
+          "isAndroidForegroundServiceEnabled": false,
+          "locationAlwaysAndWhenInUsePermission": false,
+          "locationAlwaysPermission": false,
+          "motionUsagePermission": false,
+          "locationFullAccuracyPermission": false,
+          "isIosReducedAccuracyByDefault": true,
+          "isIosBackgroundLocationEnabled": false
+        }
+      ]
+    ],
+    "icon": "./assets/brand/app-icon.png"
+  }
+}

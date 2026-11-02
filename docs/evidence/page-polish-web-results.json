@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-11-01T14:03:59.505731+00:00",
+  "checks": [
+    "Profile disclosures open real preview/privacy detail and collapse without changing preferences",
+    "Notification preview follows the saved API privacy preference",
+    "Failed preference save keeps its previous value and retry reaches API",
+    "Clinical appointment history appears first; cancelled bookings expand only on request",
+    "Appointments distinguish a pending booking load from an empty list",
+    "Booking refresh error has a working retry without misleading empty state",
+    "No uncaught browser errors in secondary-page flows"
+  ],
+  "error": null,
+  "scope": "Polished secondary pages on React Native Web against local API",
+  "passed": 7,
+  "pageErrors": [],
+  "preferencesRestored": true
+}

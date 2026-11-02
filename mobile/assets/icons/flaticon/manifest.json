@@ -1,0 +1,176 @@
+{
+  "sourcePage": "https://www.flaticon.com/icon-fonts-most-downloaded",
+  "officialInstructions": "https://www.flaticon.com/uicons/get-started",
+  "package": "@flaticon/flaticon-uicons",
+  "version": "3.3.1",
+  "archive": "https://registry.npmjs.org/@flaticon/flaticon-uicons/-/flaticon-uicons-3.3.1.tgz",
+  "archiveIntegrity": "sha512-WN2zuECCdjuGBQrjzN0kpeSygzC5fgF8Q7pDR+FUuGtYWczSdIhIwoD+/fKBEfwqKfNIMZ1WouidevGQ4OJORg==",
+  "style": "Regular Rounded",
+  "conversion": "Original WOFF2 glyph outlines exported as SVG with fontTools 4.68.0",
+  "attribution": "Uicons by Flaticon",
+  "attributionUrl": "https://www.flaticon.com/uicons",
+  "icons": [
+    {
+      "appName": "home",
+      "flaticonName": "fi-rr-home-heart",
+      "asset": "home-heart.svg",
+      "sha256": "1b6e3618697aaa1c554be3c585152c46473b197ded51abbc25ebb082dda50823"
+    },
+    {
+      "appName": "layers",
+      "flaticonName": "fi-rr-layers",
+      "asset": "layers.svg",
+      "sha256": "e9f2940797547ae75a1d88b8644e50328d6949264474e09c656a1951dc105631"
+    },
+    {
+      "appName": "calendar",
+      "flaticonName": "fi-rr-calendar",
+      "asset": "calendar.svg",
+      "sha256": "7d56b8d4ebacdd3fab973ed98883f0d1d08d8fbc4ae8525f6dfa12bee8187ec0"
+    },
+    {
+      "appName": "message-circle",
+      "flaticonName": "fi-rr-comment-dots",
+      "asset": "comment-dots.svg",
+      "sha256": "0dbcdad771e22a579df4bbe2fef22adcb26b1308f736371b8b5e423b25dab826"
+    },
+    {
+      "appName": "user",
+      "flaticonName": "fi-rr-user",
+      "asset": "user.svg",
+      "sha256": "58b4c70a156dabcc77897d21faca1a06b9602148962863fe6a13f45ca1b2175e"
+    },
+    {
+      "appName": "bell",
+      "flaticonName": "fi-rr-bell",
+      "asset": "bell.svg",
+      "sha256": "4cba7a8adf6535887b2f946cb2effcdcb6270f7e965ce1e23b22e5080503215d"
+    },
+    {
+      "appName": "help-circle",
+      "flaticonName": "fi-rr-interrogation",
+      "asset": "interrogation.svg",
+      "sha256": "45741674097dbccf5bbbb747a2c64767b5a5c5c93b1125c138cfcc6146ff4887"
+    },
+    {
+      "appName": "alert-circle",
+      "flaticonName": "fi-rr-exclamation",
+      "asset": "exclamation.svg",
+      "sha256": "2e37629f703f6fb87cbd039c30a04eddc2512ba40360136f6fdcc5c2ade516e7"
+    },
+    {
+      "appName": "info",
+      "flaticonName": "fi-rr-info",
+      "asset": "info.svg",
+      "sha256": "37670516b4e8225c4ef26372a1b4dca74df1569f3ba284be3a13614d3f6de885"
+    },
+    {
+      "appName": "clock",
+      "flaticonName": "fi-rr-clock",
+      "asset": "clock.svg",
+      "sha256": "70ba5645a70e3ff47b6668faee05defa053e5a095928c9853c2ce17b17372b66"
+    },
+    {
+      "appName": "map-pin",
+      "flaticonName": "fi-rr-marker",
+      "asset": "marker.svg",
+      "sha256": "de92af56fc43c0715b2180e6febd1185d3783889eea6dc36e76632999224afea"
+    },
+    {
+      "appName": "file-text",
+      "flaticonName": "fi-rr-clipboard-prescription",
+      "asset": "clipboard-prescription.svg",
+      "sha256": "a25f3e009fa68f0b161e048258fa8515d979d28248d957160661c47660e46977"
+    },
+    {
+      "appName": "heart",
+      "flaticonName": "fi-rr-heart",
+      "asset": "heart.svg",
+      "sha256": "91bb6023997ddf1e11d049d7aba5f400650aa2cf5b757e37c65a2c6f0bfa7a33"
+    },
+    {
+      "appName": "activity",
+      "flaticonName": "fi-rr-pulse",
+      "asset": "pulse.svg",
+      "sha256": "c208f69fe1f8f3318e91f15b3ea3a713a531a5c896acfe8429496cd66d11a867"
+    },
+    {
+      "appName": "shield",
+      "flaticonName": "fi-rr-shield-check",
+      "asset": "shield-check.svg",
+      "sha256": "62c7683d26e9ee02403c97adc720bee661285f2c75ab26e55e18b23636cacddd"
+    },
+    {
+      "appName": "lock",
+      "flaticonName": "fi-rr-lock",
+      "asset": "lock.svg",
+      "sha256": "65a7a6b60165383f3d87f26c801f2efd149ab875058dc35640214823296ca49f"
+    },
+    {
+      "appName": "database",
+      "flaticonName": "fi-rr-database",
+      "asset": "database.svg",
+      "sha256": "b475cdbf9c27d38052457f2945592961c197d2adc164447165965973607d98e2"
+    },
+    {
+      "appName": "refresh-cw",
+      "flaticonName": "fi-rr-refresh",
+      "asset": "refresh.svg",
+      "sha256": "7f9b0e6ad4dcfaa0ace3366ec4d82e776e122452c8ae771c513094d0d0cbd4ec"
+    },
+    {
+      "appName": "wifi-off",
+      "flaticonName": "fi-rr-wifi-slash",
+      "asset": "wifi-slash.svg",
+      "sha256": "0f2266a050512b3e6876151b6041fe2a55a488661bbd7c2ab4c81f5e278d91cc"
+    },
+    {
+      "appName": "arrow-right",
+      "flaticonName": "fi-rr-arrow-right",
+      "asset": "arrow-right.svg",
+      "sha256": "a57bf8d743e9414e54c93183848d61c1ca2a81d89f13fa801d13bdbbf7cf7650"
+    },
+    {
+      "appName": "arrow-up",
+      "flaticonName": "fi-rr-arrow-up",
+      "asset": "arrow-up.svg",
+      "sha256": "5317ebfa8a2134b2c25ef2ec84d4b2a1936d0b6cceccc73149d7c6a4ac8fd4b5"
+    },
+    {
+      "appName": "arrow-up-right",
+      "flaticonName": "fi-rr-arrow-up-right",
+      "asset": "arrow-up-right.svg",
+      "sha256": "a892a4600c2aca66f949e2c6b5602d9b9b3ba39a7d9c7bd5473b0ab970dfd51f"
+    },
+    {
+      "appName": "chevron-right",
+      "flaticonName": "fi-rr-angle-right",
+      "asset": "angle-right.svg",
+      "sha256": "9c148f050f517ca8b8a43c6ef3c34b20ee53648c9210fcdf3b32e6e60e4a7d51"
+    },
+    {
+      "appName": "check",
+      "flaticonName": "fi-rr-check",
+      "asset": "check.svg",
+      "sha256": "8c24779b575a557463c59e7faf3e73f90f77bcb47b24641b03da199fa23c9de0"
+    },
+    {
+      "appName": "check-circle",
+      "flaticonName": "fi-rr-check-circle",
+      "asset": "check-circle.svg",
+      "sha256": "241c98458e1206646191b7b729b8a2de1042db6e8e9d1b3567394316c3bd19c0"
+    },
+    {
+      "appName": "x",
+      "flaticonName": "fi-rr-cross-small",
+      "asset": "cross-small.svg",
+      "sha256": "7dc83b431268ccea909f03d75aab5ffe1a37906f1122c53b43094b239fcdc818"
+    },
+    {
+      "appName": "inbox",
+      "flaticonName": "fi-rr-inbox",
+      "asset": "inbox.svg",
+      "sha256": "44a9148378194205bb91156353989d7c503a3bf599905ef9170a1bb04b81c4ad"
+    }
+  ]
+}

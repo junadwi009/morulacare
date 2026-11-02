@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-11-01T13:48:37.316637+00:00",
+  "scope": "Standalone release APK / no Expo Go or Metro / Android35 Google APIs revision9 / API demo; emulator GPS injection, not physical GPS",
+  "syntheticPosition": {
+    "latitude": -6.195055,
+    "longitude": 106.8338607
+  },
+  "checks": [
+    "Own standalone activity is resumed while Expo Go is stopped",
+    "Metro is stopped; standalone runtime does not need it",
+    "Google AVD renders redesigned API home without automatic permission prompt",
+    "Standalone native preference PATCH reaches real API and restores original values",
+    "Explicit foreground lookup detects injected Jakarta position with native provider",
+    "Native UI hides GPS accuracy diagnostics",
+    "Jakarta is the first nearest directory card; maps are not opened",
+    "Location state survives native tab navigation",
+    "Clear removes location from native session state",
+    "Searching nearby branches leaves official appointments unchanged"
+  ],
+  "passed": 10,
+  "error": null,
+  "foregroundPermissionDialogObserved": false
+}

@@ -1,0 +1,115 @@
+{
+  "timestamp": "2026-11-01T09:51:08.524855+00:00",
+  "browser": "Microsoft Edge",
+  "version": "156.0.4314.58",
+  "mode": "API demo",
+  "captures": [
+    {
+      "width": 360,
+      "height": 800,
+      "screen": "home",
+      "screenshot": "ui-after-360-home.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "screen": "journey",
+      "screenshot": "ui-after-360-journey.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "screen": "appointments",
+      "screenshot": "ui-after-360-appointments.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "screen": "assistant",
+      "screenshot": "ui-after-360-assistant.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "screen": "profile",
+      "screenshot": "ui-after-360-profile.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "screen": "home",
+      "screenshot": "ui-after-390-home.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "screen": "journey",
+      "screenshot": "ui-after-390-journey.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "screen": "appointments",
+      "screenshot": "ui-after-390-appointments.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "screen": "assistant",
+      "screenshot": "ui-after-390-assistant.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "screen": "profile",
+      "screenshot": "ui-after-390-profile.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "screen": "home",
+      "screenshot": "ui-after-1280-home.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "screen": "journey",
+      "screenshot": "ui-after-1280-journey.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "screen": "appointments",
+      "screenshot": "ui-after-1280-appointments.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "screen": "assistant",
+      "screenshot": "ui-after-1280-assistant.png",
+      "horizontalPageOverflow": false
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "screen": "profile",
+      "screenshot": "ui-after-1280-profile.png",
+      "horizontalPageOverflow": false
+    }
+  ],
+  "pageErrors": [],
+  "scope": "Web visual evidence; native Android evidence is separate"
+}

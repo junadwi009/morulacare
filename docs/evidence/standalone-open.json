@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-11-01T14:57:35.372Z",
+  "package": "com.example.morulacare.concept",
+  "avd": "MorulaCare_Google_API_35",
+  "serial": "emulator-5580",
+  "api": "http://127.0.0.1:8080",
+  "sha256": null,
+  "expoGoStopped": true,
+  "metroRequired": false,
+  "action": "open"
+}

@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-11-01T14:16:27.505564+00:00",
+  "artifact": {
+    "timestamp": "2026-11-01T14:07:11.177Z",
+    "artifact": "artifacts/android/MorulaCare-local-api-x86_64.apk",
+    "bytes": 35591138,
+    "sha256": "11998ab9b5075b10e4e18fa70179f9a0b5dc9cf515d3a191daa59613ed7a52b9",
+    "variant": "release",
+    "architecture": "x86_64",
+    "package": "com.example.morulacare.concept",
+    "mode": "API demo",
+    "apiUrl": "http://127.0.0.1:8080",
+    "embeddedJavaScript": true,
+    "staging": "C:\\morula-local-apk",
+    "signing": "Expo template debug test key; not a production upload key",
+    "sourceFingerprint": "683b4a70cd01fa6809eee212fa80aea8cddd5f4011911a2f84231148aa8f3302",
+    "cloudUsed": false
+  },
+  "reports": {
+    "current-web-smoke.json": {
+      "passed": 15,
+      "timestamp": "2026-11-01T14:04:35.599826+00:00"
+    },
+    "ux-journey-results.json": {
+      "passed": 10,
+      "timestamp": "2026-11-01T14:04:36.118339+00:00"
+    },
+    "photo-booking-web-results.json": {
+      "passed": 12,
+      "timestamp": "2026-11-01T14:04:49.564479+00:00"
+    },
+    "page-polish-web-results.json": {
+      "passed": 7,
+      "timestamp": "2026-11-01T14:03:59.505731+00:00"
+    },
+    "page-polish-native-results.json": {
+      "passed": 10,
+      "timestamp": "2026-11-01T14:12:57.266775+00:00"
+    },
+    "page-polish-booking-native-results.json": {
+      "passed": 6,
+      "timestamp": "2026-11-01T14:13:05.867348+00:00"
+    },
+    "standalone-apk-verification.json": {
+      "passed": 9,
+      "timestamp": "2026-11-01T14:07:23.584963+00:00"
+    }
+  },
+  "webPassed": 44,
+  "nativePassed": 16,
+  "artifactPassed": 9,
+  "ready": {
+    "timestamp": "2026-11-01T14:15:42.335855+00:00",
+    "resumed": "topResumedActivity=ActivityRecord{3bc0876 u0 com.example.morulacare.concept/.MainActivity t41}",
+    "expoGoRunning": false,
+    "metroRunning": false,
+    "apiHealth": "UP",
+    "emulatorLeftRunning": true,
+    "launcherFlowerObserved": true,
+    "nativeSplashResourceInspected": true,
+    "nativeSplashThemeReferenceVerified": true,
+    "osSplashScreenshotCaptured": false,
+    "installedApkSha256": "11998ab9b5075b10e4e18fa70179f9a0b5dc9cf515d3a191daa59613ed7a52b9",
+    "installedApkMatchesArtifact": true,
+    "finalPage": "Perjalanan / Program",
+    "fontScale": "1.0",
+    "stylusHandwritingRestored": "null"
+  },
+  "error": null,
+  "scope": "Local test-signed x86_64 APK on owned Google API35 emulator; API demo; no physical/iOS/patient acceptance"
+}

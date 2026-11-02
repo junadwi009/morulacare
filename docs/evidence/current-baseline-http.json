@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-01T08:16:56.024Z",
+  "base": "http://localhost:8080",
+  "restartTested": false,
+  "checks": [
+    "public health UP",
+    "patient endpoint rejects anonymous access",
+    "server-scoped synthetic overview",
+    "patient response prevents caching",
+    "embryos returns source list",
+    "only released embryos",
+    "activities returns source list",
+    "appointments returns source list",
+    "receipt explicitly remains demo and unsent",
+    "equal retry returns identical receipt",
+    "conflicting retry returns 409",
+    "8 concurrent equal requests return one receipt",
+    "preferences updated",
+    "checklist acknowledgement updated",
+    "partner sharing remains blocked",
+    "chat returns demo response",
+    "medical dosage question requires staff",
+    "automation delivery disabled",
+    "request does not mutate official appointments"
+  ],
+  "receiptId": "req-3c322747-c892-43e3-876c-baeb7de8fc56"
+}

@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-11-01T12:23:12.620631+00:00",
+  "scope": "Standalone release APK / no Expo Go or Metro / Android35 Google APIs revision9 / API demo; emulator GPS injection, not physical GPS",
+  "syntheticPosition": {
+    "latitude": -6.195055,
+    "longitude": 106.8338607
+  },
+  "checks": [
+    "Own standalone activity is resumed while Expo Go is stopped",
+    "Metro is stopped; standalone runtime does not need it",
+    "Google AVD renders redesigned API home without automatic permission prompt"
+  ],
+  "passed": 3,
+  "error": "Expected native control was not found"
+}

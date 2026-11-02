@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-11-01T09:44:54.9530459Z",
+  "serial": "emulator-5580",
+  "androidRelease": "15",
+  "androidSdk": "35",
+  "display": "Physical size: 1080x2340",
+  "density": "Physical density: 440",
+  "reversedPorts": "host-17 tcp:8080 tcp:8080\r\nhost-17 tcp:8081 tcp:8081",
+  "activity": [
+    "    topResumedActivity=ActivityRecord{be8edc5 u0 host.exp.exponent/.experience.ExperienceActivity t29}",
+    "  ResumedActivity: ActivityRecord{be8edc5 u0 host.exp.exponent/.experience.ExperienceActivity t29}",
+    "  mFocusedApp=ActivityRecord{be8edc5 u0 host.exp.exponent/.experience.ExperienceActivity t29}"
+  ]
+}

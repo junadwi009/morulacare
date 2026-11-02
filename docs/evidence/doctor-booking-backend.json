@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-11-01T13:07:13.620984+00:00",
+  "scope": "Local demo API/PostgreSQL only; no hospital reservation",
+  "java": {
+    "tests": 51,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "httpChecks": [
+    "Four fictional doctor profiles served by rebuilt local API",
+    "Twelve synthetic slots with actual availability",
+    "Booking is persisted and confirmed only as demo",
+    "HTTP duplicate retry returns identical booking",
+    "Second key cannot double-book an occupied slot",
+    "Booking and occupied slot survive actual API container restart",
+    "Cancellation is repeatable and releases slot",
+    "Replaying cancelled key does not silently rebook",
+    "Official appointments remain unchanged"
+  ],
+  "httpPassed": 9,
+  "error": null,
+  "syntheticBookingId": "booking-7208261c-e024-4b1a-925c-aa45b4eb457f",
+  "cleanup": "Own synthetic booking cancelled; history retained"
+}

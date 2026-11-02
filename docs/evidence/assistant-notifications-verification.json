@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-11-01T14:58:53.397117+00:00",
+  "artifact": {
+    "timestamp": "2026-11-01T14:52:13.480Z",
+    "artifact": "artifacts/android/MorulaCare-local-api-x86_64.apk",
+    "bytes": 35602026,
+    "sha256": "1759fbe0c37a17caf19dc5e3a321151080fbb4e9f9c535dfe7bdfb7b80743dc1",
+    "variant": "release",
+    "architecture": "x86_64",
+    "package": "com.example.morulacare.concept",
+    "mode": "API demo",
+    "apiUrl": "http://127.0.0.1:8080",
+    "embeddedJavaScript": true,
+    "staging": "C:\\morula-local-apk",
+    "signing": "Expo template debug test key; not a production upload key",
+    "sourceFingerprint": "9a409d33cace4360d29ebde028d5454024f827f313e1938ffb523ee5c6945886",
+    "cloudUsed": false
+  },
+  "reports": {
+    "assistant-notifications-web-results.json": {
+      "passed": 10,
+      "timestamp": "2026-11-01T14:48:59.223362+00:00"
+    },
+    "current-web-smoke.json": {
+      "passed": 15,
+      "timestamp": "2026-11-01T14:49:29.172102+00:00"
+    },
+    "ux-journey-results.json": {
+      "passed": 10,
+      "timestamp": "2026-11-01T14:49:29.801460+00:00"
+    },
+    "assistant-notifications-native-results.json": {
+      "passed": 7,
+      "timestamp": "2026-11-01T14:52:48.211482+00:00"
+    },
+    "standalone-apk-verification.json": {
+      "passed": 9,
+      "timestamp": "2026-11-01T14:52:33.123860+00:00"
+    }
+  },
+  "webPassed": 35,
+  "nativePassed": 7,
+  "artifactPassed": 9,
+  "ready": {
+    "timestamp": "2026-11-01T14:58:00.755761+00:00",
+    "resumed": "topResumedActivity=ActivityRecord{93959cb u0 com.example.morulacare.concept/.MainActivity t54}",
+    "expoGoRunning": false,
+    "metroRunning": false,
+    "apiHealth": "UP",
+    "emulatorLeftRunning": true,
+    "launcherFlowerObserved": true,
+    "nativeSplashResourceInspected": true,
+    "nativeSplashThemeReferenceVerified": true,
+    "osSplashScreenshotCaptured": false,
+    "installedApkSha256": "1759fbe0c37a17caf19dc5e3a321151080fbb4e9f9c535dfe7bdfb7b80743dc1",
+    "installedApkMatchesArtifact": true,
+    "finalPage": "Asisten / welcome",
+    "fontScale": "1.0",
+    "stylusHandwritingRestored": "null",
+    "freshUnreadSession": true
+  },
+  "error": null,
+  "scope": "Owned Android35 Google AVD, local test-signed x86_64 standalone API demo; session-only read markers; no physical/iOS/patient acceptance"
+}

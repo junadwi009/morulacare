@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-11-01T14:12:57.266775+00:00",
+  "runtime": "Standalone release APK / native Android15/API35 x86_64",
+  "avd": "MorulaCare_Google_API_35",
+  "serial": "emulator-5580",
+  "checks": [
+    "Native API-mode overview and all five navigation tabs",
+    "Native checklist mutation reached API and was restored",
+    "Native released-embryo detail and provenance",
+    "Native care-history filtering and instructions",
+    "Native request-modal input and submit remain usable above Android keyboard",
+    "Native synthetic request receipt preserves official appointments",
+    "Native API assistant schedule and clinical handoff",
+    "Native preference mutation reached API and partner boundary remains",
+    "Native Home/Journey/Appointments/Profile render and detail navigation at font scales1.3 and2.0",
+    "Official appointments remain unchanged after native test flows"
+  ],
+  "passed": 10,
+  "error": null,
+  "fontScaleRestored": "1.0",
+  "subset": "full",
+  "scope": "Native standalone API UX acceptance; local synthetic data",
+  "stylusHandwritingSettingRestored": "null",
+  "package": "com.example.morulacare.concept"
+}

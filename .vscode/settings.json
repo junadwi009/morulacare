@@ -1,0 +1,15 @@
+{
+  "typescript.tsdk": "mobile/node_modules/typescript/lib",
+  "files.exclude": {
+    "**/.expo": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/target": true,
+    "preview": true,
+    "mobile/dist-ios-test": true
+  },
+  "java.import.maven.enabled": true,
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "python.defaultInterpreterPath": "C:\\Users\\User.LAPTOP-OROCJQ8C.000/codex-development-setup/2026-11-01/tools/python/Scripts/python.exe"
+}

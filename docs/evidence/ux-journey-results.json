@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-11-01T14:49:29.801460+00:00",
+  "checks": [
+    "Visual Home prioritizes doctor choice and keeps API/GPS diagnostics hidden",
+    "Home and five navigation targets fit small, standard, wide and landscape viewports",
+    "All secondary pages fit landscape and assistant composer remains reachable",
+    "Journey segment and history filter persist across peer-tab navigation",
+    "Appointment segment persists and featured visit opens actual preparation",
+    "Assistant pending reply, conversation and unsent draft survive tab navigation",
+    "Reduced-motion preference opens directory without a running entrance animation",
+    "Dismissing a pending location sheet cancels and ignores its late callback",
+    "Empty released reports remain explicit through the visual Home shortcut",
+    "No uncaught page errors during new patient journeys"
+  ],
+  "error": null,
+  "scope": "React Native Web API; synthetic patient, controlled browser location. Not patient usability research.",
+  "passed": 10,
+  "pageErrors": []
+}

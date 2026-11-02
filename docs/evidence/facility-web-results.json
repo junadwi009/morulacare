@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-11-01T13:14:00.632218+00:00",
+  "scope": "React Native Web API mode; controlled browser permission/geolocation, not physical GPS",
+  "passed": 11,
+  "checks": [
+    "No automatic location request on startup",
+    "Manual city search works without permission or invented distance",
+    "No-result state provides a working reset",
+    "Controlled granted location ranks Jakarta first without exposing GPS diagnostics",
+    "Location survives tab navigation within the session",
+    "Clear location removes distance ranking",
+    "Home layout fits 360, 390 and 480 widths without page overflow",
+    "Reload clears session location without requesting it again",
+    "Denied permission keeps manual search usable",
+    "Cancel ignores a late browser position callback",
+    "No uncaught browser errors"
+  ],
+  "pageErrors": []
+}

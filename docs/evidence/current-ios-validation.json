@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-11-01T10:45:52.000Z",
+  "platform": "ios",
+  "host": "win32",
+  "scope": "iOS production JS/Hermes export in API demo mode; not native execution",
+  "nativeRuntime": {
+    "status": "NOT_RUN",
+    "reason": "No available Mac/iOS simulator or physical iOS device. Windows cannot host the Apple iOS simulator."
+  },
+  "checks": [
+    "Current source exports successfully for iOS",
+    "Export metadata contains iOS only",
+    "iOS bundle path stays inside export directory",
+    "iOS Hermes bundle is nonempty",
+    "Bundle has Hermes bytecode header",
+    "Export embeds the explicit local API URL",
+    "Export includes API demo authentication path",
+    "All exported iOS assets exist"
+  ],
+  "passed": 8,
+  "error": null,
+  "bundle": {
+    "path": "mobile/dist-ios-test/_expo/static/js/ios/index-16ad2b1932d5ace2343aa64a61d1f3bc.hbc",
+    "bytes": 1942886,
+    "sha256": "41a651388e22a7ff43dbcb1a2bc15f2bdbcc1b0c77b5df561ec2218bea451c1a",
+    "assetCount": 0
+  },
+  "versions": {
+    "@expo/vector-icons": "15.1.1",
+    "expo": "58.0.22",
+    "expo-crypto": "58.0.7",
+    "expo-font": "58.0.11",
+    "expo-location": "~58.0.20",
+    "expo-splash-screen": "~58.0.12",
+    "expo-status-bar": "58.0.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "5.10.1",
+    "react-native-svg": "15.16.0",
+    "react-native-web": "0.21.4"
+  }
+}
