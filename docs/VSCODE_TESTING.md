@@ -25,6 +25,25 @@ Hasil terlihat di terminal task. TypeScript juga memasukkan error ke panel **Pro
 
 ## Debug dengan F5
 
+### Jika task APK berhenti dengan `UV_HANDLE_CLOSING`
+
+Pesan `Assertion failed: !(handle->flags & UV_HANDLE_CLOSING)` dan exit code
+`-1073740791` berasal dari runtime Node.js Windows. Ada laporan upstream tentang
+assertion ini pada shutdown setelah `fetch` ([Node.js #56645](https://github.com/nodejs/node/issues/56645)).
+Crash yang dilaporkan pengguna belum berhasil direproduksi pada pemeriksaan lokal;
+keterkaitan dengan `fetch` merupakan dugaan berdasarkan gejala dan jalur skrip.
+
+Helper APK kini memakai `node:http` tanpa connection pooling untuk health check,
+memiliki batas waktu, dan menampilkan pesan API tidak tersedia secara terkendali.
+Node global dan APK tidak perlu diganti untuk memakai perubahan helper ini.
+Jalankan ulang **Tasks: Run Task → Morula: APK open installed (API)**.
+Task tersebut menunggu backend siap dan membuka aplikasi standalone tanpa Metro.
+
+Tes helper: `node.exe --test scripts/local-api-health.test.mjs`.
+Bukti peluncuran berulang: `docs/evidence/android-launcher-regression.json`.
+
+### Pilihan debugger
+
 Pilih konfigurasi dari **Run and Debug**:
 
 - `Morula: debug HTTP verification`: breakpoint pada `scripts/verify-local.mjs`, memakai debugger JavaScript bawaan VS Code.

@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-11-02T02:43:25.119899+00:00",
+  "node": "26.5.1",
+  "originalCrashReproduced": false,
+  "tests": 6,
+  "runs": [
+    {
+      "attempt": 1,
+      "exitCode": 0,
+      "launched": true,
+      "nativeAssertion": false,
+      "stderr": ""
+    },
+    {
+      "attempt": 2,
+      "exitCode": 0,
+      "launched": true,
+      "nativeAssertion": false,
+      "stderr": ""
+    },
+    {
+      "attempt": 3,
+      "exitCode": 0,
+      "launched": true,
+      "nativeAssertion": false,
+      "stderr": ""
+    }
+  ]
+}

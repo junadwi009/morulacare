@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { requireLocalApi } from './local-api-health.mjs';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 const adb=join(homedir(),'AppData/Local/Android/Sdk/platform-tools/adb.exe');
@@ -22,8 +23,7 @@ function owned() {
   assert.ok(device(['emu','avd','name']).split(/\r?\n/).some(line=>line.trim()==='MorulaCare_Google_API_35'),'Refusing to control an unrelated AVD');
 }
 async function ready() {
-  const health=await fetch('http://127.0.0.1:8080/actuator/health',{signal:AbortSignal.timeout(10000)});
-  assert.ok(health.ok&&(await health.json()).status==='UP','Start the local API first: docker.exe compose -p morula-care-local up -d --wait api');
+  await requireLocalApi();
   if(!execute(['devices']).includes(serial+'\tdevice')) {
     const status=await new Promise((resolve,reject)=>{
       const child=spawn(process.execPath,[join(root,'scripts/android-local.mjs'),'start','--google','--visible'],{cwd:root,windowsHide:true,stdio:'inherit'});
@@ -34,6 +34,7 @@ async function ready() {
   owned();
   console.log(device(['reverse','tcp:8080','tcp:8080']));
 }
+try {
 const command=process.argv[2]||'run';
 if(command==='run'||command==='open') {
   let build;
@@ -59,3 +60,7 @@ if(command==='run'||command==='open') {
 } else if(command==='stop') {
   owned();console.log(device(['shell','am','force-stop',packageName]));
 } else throw Error('Use run (install + launch), open (launch installed APK), or stop');
+} catch (error) {
+  console.error(error.message);
+  process.exitCode = 1;
+}
