@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-11-03T00:47:37.825771+00:00",
+  "checks": [
+    "Phone demo opens standalone with Wi-Fi and mobile data disabled",
+    "Journey, appointments and profile load from bundled synthetic data",
+    "Doctor selection, schedule, review and booking work without a backend",
+    "Assistant responds from bundled demo without a network connection",
+    "Demo notification inbox opens offline"
+  ],
+  "error": null,
+  "physicalPhoneTested": false,
+  "scope": "Same dual-ABI phone APK, offline on owned x86_64 Android emulator",
+  "passed": 5,
+  "originalWifi": "1",
+  "originalMobileData": "1",
+  "originalStylus": "null"
+}

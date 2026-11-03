@@ -1,5 +1,7 @@
 # Morula Care - React Native + Java
 
+> APK untuk HP: [ANDROID_PHONE](docs/ANDROID_PHONE.md) menjelaskan build ARM64/x86_64 terpisah dengan mode demo lokal, pemasangan di HP dan batas pengujian perangkat fisik. APK API x86_64 sebelumnya khusus emulator.
+
 > Latest assistant/inbox update: [ASSISTANT_NOTIFICATIONS_POLISH](docs/ASSISTANT_NOTIFICATIONS_POLISH.md) covers concise chat, on-demand sources, safe draft retry, session-only notification read markers and the latest emulator APK verification.
 
 > Latest doctor flow: [DOCTOR_FLOW_POLISH](docs/DOCTOR_FLOW_POLISH.md) documents the concise profile, separate date/time selection, timezone groups, preserved draft/edit flow and latest emulator APK verification.

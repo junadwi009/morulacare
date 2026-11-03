@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-11-03T00:49:44.973354+00:00",
+  "artifact": "artifacts/android/MorulaCare-phone-demo.apk",
+  "bytes": 53313074,
+  "sha256": "227d103cbfbc3cbd66c5f36318c08d0a01b7d43ccf4399a7b7f9618338e30245",
+  "installedSha256": "227d103cbfbc3cbd66c5f36318c08d0a01b7d43ccf4399a7b7f9618338e30245",
+  "apkChecks": 12,
+  "nativeChecks": 5,
+  "unitChecks": 9,
+  "physicalPhoneTested": false,
+  "requestedPhone": "Samsung Galaxy A50, Android 16 (user reported)",
+  "restoredSettings": {
+    "wifi_on": "1",
+    "mobile_data": "1",
+    "stylus_handwriting_enabled": "null"
+  },
+  "emulatorLeftRunning": true
+}

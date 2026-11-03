@@ -1,4 +1,4 @@
-// Local, emulator-targeted standalone release APK. No EAS, upload or production key.
+// Local standalone APK: default API emulator, or --phone offline demo. No cloud.
 import assert from 'node:assert/strict';
 import { spawn, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
@@ -9,22 +9,38 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const source = join(root, 'mobile');
+const phoneDemo = process.argv.includes('--phone');
+const architectures = phoneDemo ? 'arm64-v8a,x86_64' : 'x86_64';
+const reportPrefix = phoneDemo ? 'phone-demo' : 'standalone';
 // Short, explicitly owned paths prevent Windows CMake/Ninja object-path overflow.
-const stage = 'C:\\morula-local-apk';
+const stage = phoneDemo ? 'C:\\morula-phone-apk' : 'C:\\morula-local-apk';
 const project = join(stage, 'project');
 const marker = join(stage, '.morula-build-owner.json');
 const evidence = join(root, 'docs/evidence');
 const sdk = join(homedir(), 'AppData/Local/Android/Sdk');
 const jdk = join(homedir(), 'codex-development-setup/2026-11-01/tools/jdk-17.0.20.1+1');
 const temp = join(homedir(), '.android/jtmp');
+// Share the API stage's cache only when that stage is already owned. A first
+// phone build must not create an unmarked API stage that prepare would reject.
+let gradleHome = join(stage, 'gradle-home');
+const apiOwner = 'C:\\morula-local-apk\\.morula-build-owner.json';
+if (phoneDemo && existsSync(apiOwner)) {
+  try {
+    if (JSON.parse(readFileSync(apiOwner, 'utf8')).sourceRoot === root) {
+      gradleHome = 'C:\\morula-local-apk\\gradle-home';
+    }
+  } catch { /* An unrecognized stage is not a shared cache. */ }
+}
 const inputFiles = ['package.json','package-lock.json','app.json','app.config.js','App.tsx','index.ts','tsconfig.json'];
 const inputTrees = ['src','assets','plugins'];
 const snapshotFile = join(stage,'source-snapshot.json');
 const env = {
   ...process.env, PATH: `C:\\Program Files\\nodejs;${join(jdk,'bin')};${process.env.PATH || ''}`,
   JAVA_HOME: jdk, ANDROID_HOME: sdk, ANDROID_SDK_ROOT: sdk,
-  GRADLE_USER_HOME: join(stage, 'gradle-home'), CI: '1', NODE_ENV: 'production',
-  MORULA_LOCAL_ANDROID_BUILD: '1', EXPO_PUBLIC_API_URL: 'http://127.0.0.1:8080', EXPO_PUBLIC_DEMO_AUTH: 'true',
+  GRADLE_USER_HOME: gradleHome, CI: '1', NODE_ENV: 'production',
+  MORULA_LOCAL_ANDROID_BUILD: '1', MORULA_PHONE_DEMO: phoneDemo ? '1' : '0',
+  EXPO_PUBLIC_API_URL: phoneDemo ? '' : 'http://127.0.0.1:8080', EXPO_PUBLIC_DEMO_AUTH: phoneDemo ? 'false' : 'true',
+  EXPO_NO_DOTENV: '1',
   EXPO_NO_GIT_STATUS: '1', CMAKE_BUILD_PARALLEL_LEVEL: '1',
   JAVA_TOOL_OPTIONS: `${process.env.JAVA_TOOL_OPTIONS || ''} -Djdk.net.unixdomain.tmpdir=${temp} -Djava.io.tmpdir=${temp}`.trim(),
 };
@@ -87,7 +103,7 @@ async function prepare() {
     cpSync(join(source,item),join(project,item),{recursive:true,preserveTimestamps:true,
       filter:(from,to)=>item!=='node_modules'||!existsSync(to)||statSync(from).isDirectory()||statSync(from).size!==statSync(to).size||Math.abs(statSync(from).mtimeMs-statSync(to).mtimeMs)>1});
   }
-  await run(process.execPath,['node_modules/expo/bin/cli','prebuild','--platform','android','--no-install','--no-clean','--skip-dependency-update','react,react-native,expo'],project,'standalone-prebuild.log');
+  await run(process.execPath,['node_modules/expo/bin/cli','prebuild','--platform','android','--no-install','--no-clean','--skip-dependency-update','react,react-native,expo'],project,reportPrefix+'-prebuild.log');
   writeFileSync(join(project,'android/local.properties'),`sdk.dir=${sdk.replaceAll('\\','/')}\n`);
   const propertiesFile=join(project,'android/gradle.properties');
   let properties=readFileSync(propertiesFile,'utf8');
@@ -96,7 +112,7 @@ async function prepare() {
     'org.gradle.workers.max':'1','org.gradle.parallel':'false','org.gradle.caching':'true',
     'kotlin.compiler.execution.strategy':'in-process','org.gradle.java.installations.auto-download':'false',
     'org.gradle.java.installations.paths':jdk.replaceAll('\\','/'),
-    'reactNativeArchitectures':'x86_64','hermesEnabled':'true','android.enableMinifyInReleaseBuilds':'false',
+    'reactNativeArchitectures':architectures,'hermesEnabled':'true','android.enableMinifyInReleaseBuilds':'false',
     'android.cmakeVersion':'3.30.5','expo.android.cmakeObjectPathMax':'180',
   })) properties=property(properties,key,value);
   writeFileSync(propertiesFile,properties);
@@ -121,7 +137,7 @@ async function build() {
   assert.equal(snapshot(project).fingerprint,prepared.staged.fingerprint,'Staged sources changed: run prepare before building');
   await run(process.env.ComSpec || 'C:\\Windows\\System32\\cmd.exe',
     ['/d','/c','gradlew.bat',':app:assembleRelease','--no-daemon','--no-parallel','--max-workers=1','--console=plain'],
-    join(project,'android'),'standalone-gradle.log');
+    join(project,'android'),reportPrefix+'-gradle.log');
   assert.equal(snapshot(source).fingerprint,prepared.source.fingerprint,'Source changed during build: prepare and rebuild before publishing an APK');
   assert.equal(snapshot(project).fingerprint,prepared.staged.fingerprint,'Staged sources changed during build: prepare and rebuild before publishing an APK');
   const apk=join(project,'android/app/build/outputs/apk/release/app-release.apk');
@@ -130,13 +146,13 @@ async function build() {
   assert.equal(archive.status,0,'APK archive could not be inspected');
   assert.ok(archive.stdout.split(/\r?\n/).includes('assets/index.android.bundle'),'Release APK has no embedded JavaScript bundle');
   const artifactDirectory=join(root,'artifacts/android');mkdirSync(artifactDirectory,{recursive:true});
-  const name='MorulaCare-local-api-x86_64.apk';copyFileSync(apk,join(artifactDirectory,name));
+  const name=phoneDemo?'MorulaCare-phone-demo.apk':'MorulaCare-local-api-x86_64.apk';copyFileSync(apk,join(artifactDirectory,name));
   const bytes=readFileSync(apk);const sha256=createHash('sha256').update(bytes).digest('hex');
   writeFileSync(join(artifactDirectory,name+'.sha256'),`${sha256}  ${name}\n`);
-  writeFileSync(join(evidence,'standalone-build.json'),JSON.stringify({timestamp:new Date().toISOString(),
-    artifact:'artifacts/android/'+name,bytes:bytes.length,sha256,variant:'release',architecture:'x86_64',
-    package:JSON.parse(readFileSync(join(source,'app.json'),'utf8')).expo.android.package,
-    mode:'API demo',apiUrl:env.EXPO_PUBLIC_API_URL,embeddedJavaScript:true,staging:stage,
+  writeFileSync(join(evidence,reportPrefix+'-build.json'),JSON.stringify({timestamp:new Date().toISOString(),
+    artifact:'artifacts/android/'+name,bytes:bytes.length,sha256,variant:'release',architecture:architectures,
+    package:JSON.parse(readFileSync(join(source,'app.json'),'utf8')).expo.android.package+(phoneDemo?'.demo':''),
+    mode:phoneDemo?'Offline demo':'API demo',apiUrl:env.EXPO_PUBLIC_API_URL,embeddedJavaScript:true,staging:stage,
     signing:'Expo template debug test key; not a production upload key',sourceFingerprint:prepared.source.fingerprint,cloudUsed:false},null,2)+'\n');
   console.log(`APK ready: ${join(artifactDirectory,name)}\nSHA256 ${sha256}`);
 }

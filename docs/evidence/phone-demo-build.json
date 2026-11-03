@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-11-03T00:44:36.160Z",
+  "artifact": "artifacts/android/MorulaCare-phone-demo.apk",
+  "bytes": 53313074,
+  "sha256": "227d103cbfbc3cbd66c5f36318c08d0a01b7d43ccf4399a7b7f9618338e30245",
+  "variant": "release",
+  "architecture": "arm64-v8a,x86_64",
+  "package": "com.example.morulacare.concept.demo",
+  "mode": "Offline demo",
+  "apiUrl": "",
+  "embeddedJavaScript": true,
+  "staging": "C:\\morula-phone-apk",
+  "signing": "Expo template debug test key; not a production upload key",
+  "sourceFingerprint": "89993cb9922e0aba7b1ffa36e4aa497e4c31787caf0e6a9700ac8c87da9adcb6",
+  "cloudUsed": false
+}

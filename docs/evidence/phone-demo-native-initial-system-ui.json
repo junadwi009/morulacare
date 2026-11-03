@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-11-03T00:46:13.128818+00:00",
+  "checks": [],
+  "error": "Native text not visible: Halo, Nadia (demo).",
+  "physicalPhoneTested": false,
+  "scope": "Same dual-ABI phone APK, offline on owned x86_64 Android emulator",
+  "passed": 0,
+  "originalWifi": "1",
+  "originalMobileData": "1",
+  "originalStylus": "null"
+}
